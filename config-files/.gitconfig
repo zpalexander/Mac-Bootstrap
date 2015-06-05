@@ -1,0 +1,37 @@
+[user]
+	name = Zach Alexander
+	email = zach@elephantventures.com
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = white bold
+	frag = yellow bold
+	old = red
+	new = cyan
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+
+[push]
+	default = simple
+[core]
+	editor = vim
+[alias]
+        cm = commit -m
+        co = checkout
+        stats = status
+        ls = branch -a
+        # Pretty log output
+        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+        # I always prefer to rebase interactively
+        rebase = rebase -i
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
