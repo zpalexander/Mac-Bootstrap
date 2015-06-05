@@ -2,8 +2,45 @@
 
 # Variables
 GREEN='\033[0;32m'
+red='\033[0;31m'
 NC='\033[0m'
 
+# Color-echo. Improved. [Thanks @joaocunha]
+# arg $1 = message
+# arg $2 = Color
+cecho() {
+  echo "${2}${1}${reset}"
+  return
+}
+
+# Set continue to false by default
+CONTINUE=false
+
+echo ""
+cecho "###############################################" $red
+cecho "#        DO NOT RUN THIS SCRIPT BLINDLY       #" $red
+cecho "#         YOU'LL PROBABLY REGRET IT...        #" $red
+cecho "#                                             #" $red
+cecho "#              READ IT THOROUGHLY             #" $red
+cecho "#         AND EDIT TO SUIT YOUR NEEDS         #" $red
+cecho "#                                             #" $red
+cecho "#        THIS WILL SET UP YOUR PROGRAMS       #" $red
+cecho "###############################################" $red
+echo ""
+
+echo ""
+cecho "Have you read through the script you're about to run and " $red
+cecho "understood that it will make changes to your computer? (y/n)" $red
+read -r response
+if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
+  CONTINUE=true
+fi
+
+if ! $CONTINUE; then
+  # Check if we're continuing and output a message if not
+  cecho "Please go read the script, it only takes a few minutes" $red
+  exit
+fi
 
 #######################################
 #### Install Homebrew and Binaries ####

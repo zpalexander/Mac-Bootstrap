@@ -38,6 +38,8 @@ cecho "#         YOU'LL PROBABLY REGRET IT...        #" $red
 cecho "#                                             #" $red
 cecho "#              READ IT THOROUGHLY             #" $red
 cecho "#         AND EDIT TO SUIT YOUR NEEDS         #" $red
+cecho "#                                             #" $red
+cecho "#        THIS WILL SET UP YOUR SETTINGS       #" $red
 cecho "###############################################" $red
 echo ""
 
