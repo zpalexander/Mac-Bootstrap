@@ -1,9 +1,9 @@
-#!/bin/bash
+#!/bin/sh
 
 # Variables
 GREEN='\033[0;32m'
 NC='\033[0m'
-function pause(){
+function pause() {
   read -p "$*"
 }
 
@@ -22,6 +22,6 @@ cp ../config-files/packagecontroleferences.sublime-settings ~/Library/Applicatio
 
 # Open Sublime Text to make sure everything looks good
 echo ''
-echo -e "${GREEN}Opening Sublime Text. Make sure everything looks good."
+echo -e "${GREEN}Opening Sublime Text. Make sure everything looks good.${NC}"
 /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl
 pause 'Press [Enter] key to continue...'

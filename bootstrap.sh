@@ -1,8 +1,6 @@
-#!/bin/bash
+#!/bin/sh
 
 # Variables
-GREEN='\033[0;32m'
-NC='\033[0m'
 
 # Install programs for the Mac
 bash scripts/install-programs.sh
