@@ -1,0 +1,15 @@
+{
+	"auto_complete": false,
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/Color Scheme - Default/Sunburst.tmTheme",
+	"default_line_endings": "unix",
+	"ensure_newline_at_eof_on_save": true,
+	"font_size": 14.0,
+	"ignored_packages":
+	[
+	],
+	"tab_size": 2,
+	"theme": "Soda Dark.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
+}

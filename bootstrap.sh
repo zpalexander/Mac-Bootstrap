@@ -13,3 +13,4 @@ bash scripts/set-settings.sh
 # Move configuration files into place
 cp config-files/.bash_profile ~/.bash_profile
 cp config-files/.gitconfig ~/.gitconfig
+cp config-files/Preferences.sublime-settings ~/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings
