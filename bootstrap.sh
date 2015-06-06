@@ -8,12 +8,14 @@ NC='\033[0m'
 bash scripts/install-programs.sh
 
 # Set settings for the Mac
-bash scripts/set-settings.sh
+bash scripts/mac-settings.sh
 
 # Move configuration files into place
 cp config-files/.bash_profile ~/.bash_profile
 cp config-files/.gitconfig ~/.gitconfig
-cp config-files/Preferences.sublime-settings ~/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings
 
-# Set up GitHub
+# Set up GitHub SSH access
 bash scripts/github-ssh.sh
+
+# Set up Sublime
+bash scripts/configure-sublime.sh
