@@ -148,5 +148,5 @@ apps=(
 
 # Install apps to /Applications
 # Default is: /Users/$user/Applications
-echo "installing apps..."
+echo -e "${GREEN}Installing apps...${NC}"
 brew cask install --appdir="/Applications" ${apps[@]}
