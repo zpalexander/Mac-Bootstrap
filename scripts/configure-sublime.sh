@@ -3,7 +3,9 @@
 # Variables
 GREEN='\033[0;32m'
 NC='\033[0m'
-
+function pause(){
+  read -p "$*"
+}
 
 echo -e "${GREEN}Setting up Sublime Text...${NC}"
 
@@ -21,8 +23,5 @@ cp ../config-files/packagecontroleferences.sublime-settings ~/Library/Applicatio
 # Open Sublime Text to make sure everything looks good
 echo ''
 echo -e "${GREEN}Opening Sublime Text. Make sure everything looks good."
-read -n1 -r -p "When you have completed the steps above, press space to verify setup..." key
 /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl
-if [ "$key" = ' ' ]; then
-  # Wait till the user presses the enter key
-fi
+pause 'Press [Enter] key to continue...'
