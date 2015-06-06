@@ -4,6 +4,8 @@
 GREEN='\033[0;32m'
 red='\033[0;31m'
 NC='\033[0m'
+# Resets the style
+reset=`tput sgr0`
 
 # Color-echo. Improved. [Thanks @joaocunha]
 # arg $1 = message
@@ -144,9 +146,20 @@ apps=(
   netbeans
   nmap
   virtualbox
+  liteicon
 )
 
 # Install apps to /Applications
 # Default is: /Users/$user/Applications
 echo -e "${GREEN}Installing apps...${NC}"
 brew cask install --appdir="/Applications" ${apps[@]}
+
+
+
+
+###############################
+#### Install Web Dev Tools ####
+###############################
+echo -e "${GREEN}Installing stuff for web dev...${NC}"
+\curl -sSL https://get.rvm.io | bash -s stable --ruby
+source /Users/zpalexander/.rvm/scripts/rvm
