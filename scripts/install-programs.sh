@@ -42,13 +42,19 @@ if ! $CONTINUE; then
   exit
 fi
 
+
+###############################
+#### Install Mac Dev Tools ####
+###############################
+echo -e "${GREEN}Installing XCODE...${NC}"
+sudo xcode-select --install
+
 #######################################
 #### Install Homebrew and Binaries ####
 #######################################
 # Check for Homebrew,
 # Install if we don't have it
 if test ! $(which brew); then
-  echo "Installing homebrew..."
   echo -e "${GREEN}Installing homebrew...${NC}"
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
@@ -91,6 +97,7 @@ binaries=(
   git
   bash-completion
   vim
+  wget
 )
 
 echo -e "${GREEN}Installing binaries...${NC}"
