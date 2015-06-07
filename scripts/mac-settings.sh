@@ -20,7 +20,7 @@ cyan='\033[0;36m'
 # Resets the style
 reset=`tput sgr0`
 
-# Color-echo. Improved. [Thanks @joaocunha]
+# Color-echo
 # arg $1 = message
 # arg $2 = Color
 cecho() {
@@ -32,15 +32,15 @@ cecho() {
 CONTINUE=false
 
 echo ""
-cecho "###############################################" $red
-cecho "#        DO NOT RUN THIS SCRIPT BLINDLY       #" $red
-cecho "#         YOU'LL PROBABLY REGRET IT...        #" $red
-cecho "#                                             #" $red
-cecho "#              READ IT THOROUGHLY             #" $red
-cecho "#         AND EDIT TO SUIT YOUR NEEDS         #" $red
-cecho "#                                             #" $red
-cecho "#        THIS WILL SET UP YOUR SETTINGS       #" $red
-cecho "###############################################" $red
+cecho "###################################################" $red
+cecho "#          DO NOT RUN THIS SCRIPT BLINDLY         #" $red
+cecho "#           YOU'LL PROBABLY REGRET IT...          #" $red
+cecho "#                                                 #" $red
+cecho "#               READ IT THOROUGHLY                #" $red
+cecho "#           AND EDIT TO SUIT YOUR NEEDS           #" $red
+cecho "#                                                 #" $red
+cecho "#        NEXT WE'LL CONFIGURE YOUR SETTINGS       #" $red
+cecho "###################################################" $red
 echo ""
 
 
@@ -87,12 +87,10 @@ if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
   for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
     defaults write "${domain}" dontAutoLoad -array \
       "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
-      "/System/Library/CoreServices/Menu Extras/Volume.menu" \
       "/System/Library/CoreServices/Menu Extras/User.menu"
   done
 
   defaults write com.apple.systemuiserver menuExtras -array \
-    "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
     "/System/Library/CoreServices/Menu Extras/AirPort.menu" \
     "/System/Library/CoreServices/Menu Extras/Battery.menu" \
     "/System/Library/CoreServices/Menu Extras/Clock.menu"

@@ -28,15 +28,15 @@ cecho() {
 CONTINUE=false
 
 echo ""
-cecho "###############################################" $red
-cecho "#        DO NOT RUN THIS SCRIPT BLINDLY       #" $red
-cecho "#         YOU'LL PROBABLY REGRET IT...        #" $red
-cecho "#                                             #" $red
-cecho "#              READ IT THOROUGHLY             #" $red
-cecho "#         AND EDIT TO SUIT YOUR NEEDS         #" $red
-cecho "#                                             #" $red
-cecho "#        THIS WILL SET UP YOUR PROGRAMS       #" $red
-cecho "###############################################" $red
+cecho "#################################################" $red
+cecho "#         DO NOT RUN THIS SCRIPT BLINDLY        #" $red
+cecho "#          YOU'LL PROBABLY REGRET IT...         #" $red
+cecho "#                                               #" $red
+cecho "#               READ IT THOROUGHLY              #" $red
+cecho "#          AND EDIT TO SUIT YOUR NEEDS          #" $red
+cecho "#                                               #" $red
+cecho "#        FIRST WE'LL SET UP YOUR PROGRAMS       #" $red
+cecho "#################################################" $red
 echo ""
 
 echo ""
