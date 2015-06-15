@@ -110,6 +110,7 @@ binaries=(
   vim
   wget
   docker
+  htop
 )
 
 echo -e "${GREEN}Installing binaries...${NC}"
@@ -172,3 +173,4 @@ brew cask install --appdir="/Applications" ${apps[@]}
 echo -e "${GREEN}Installing stuff for web dev...${NC}"
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
 source /Users/zpalexander/.rvm/scripts/rvm
+sudo npm install grunt gulp sass node-inspector
