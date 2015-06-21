@@ -1,13 +1,13 @@
 #!/bin/sh
 
-# Variables
-GREEN='\033[0;32m'
-NC='\033[0m'
-function pause() {
-  read -p "$*"
-}
+# Import script globals
+source ../project-config/globals.sh
 
-echo -e "${GREEN}Setting up Sublime Text...${NC}"
+################################
+# This script sets up Sublime  #
+#   Text for web development   #
+################################
+cecho "Setting up Sublime Text..." $green
 
 # Download and install Package Control
 wget https://packagecontrol.io/Package%20Control.sublime-package
@@ -22,6 +22,6 @@ cp ../config-files/packagecontroleferences.sublime-settings ~/Library/Applicatio
 
 # Open Sublime Text to make sure everything looks good
 echo ''
-echo -e "${GREEN}Opening Sublime Text. Make sure everything looks good.${NC}"
+cecho "Opening Sublime Text. Make sure everything looks good." $green
 /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl
 pause 'Press [Enter] key to continue...'
