@@ -7,6 +7,7 @@ source ../project-config/globals.sh
 # This script sets up SSH access #
 #     to your Github account     #
 ##################################
+cecho "Now let's set up GitHub access..." $green
 echo ''
 cecho "Setting up an SSH key for your GitHub account" $green
 # Substitute your GitHub email account here
