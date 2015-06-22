@@ -16,6 +16,7 @@ bash scripts/mac-settings.sh
 # Move configuration files into place
 cp config-files/.bash_profile ~/.bash_profile
 cp config-files/.gitconfig ~/.gitconfig
+cp config-files/.vimrc ~/.vimrc
 
 # Set up GitHub SSH access
 bash scripts/github-ssh.sh

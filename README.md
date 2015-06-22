@@ -21,9 +21,9 @@ This script will do the following:
 
 This project comes with a number of hand-selected, flat, minimal icons to replace the ones I don't like in Mac OS X.
 To set them up:
-- open the "LiteIcon" application
-- drag the desired icons to their respective Apps
-- click "Apply Changes" when you're satisfied
+- Open the "LiteIcon" application
+- Drag the desired icons to their respective Apps
+- Click "Apply Changes" when you're satisfied
 
 
 ### Install Chrome Extensions
